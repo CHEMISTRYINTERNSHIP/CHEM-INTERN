@@ -25,9 +25,17 @@
 
 <p style="color:red;"><b>⚠ Limited seats available. First come, first serve.</b></p>
 
+<!-- APPLY BUTTON (Correct position) -->
+<div style="text-align:center; margin-top:20px;">
+<button onclick="document.getElementById('apply').scrollIntoView();" 
+style="padding:10px 20px; background:#0b5ed7; color:white; border:none; border-radius:5px; font-size:16px;">
+Apply Now
+</button>
 </div>
 
-<!-- APPLY FORM -->
+</div>
+
+<!-- FORM -->
 
 <h2 id="apply" style="text-align:center; margin-top:30px;">📝 Apply Now</h2>
 
@@ -53,7 +61,6 @@
 
 <textarea name="Message" placeholder="Why do you want to join?" rows="4" style="width:100%; padding:10px; margin:8px 0;"></textarea>
 
-<!-- Important settings -->
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_template" value="table">
 
@@ -66,38 +73,3 @@ Submit
 </div>
 
 </section>
-<div style="text-align:center; margin-top:20px;">
-<button onclick="document.getElementById('apply').scrollIntoView();" 
-style="padding:10px 20px; background:#0b5ed7; color:white; border:none; border-radius:5px; font-size:16px;">
-Apply Now
-</button>
-</div>
-<h2 id="apply">📝 Apply Now</h2>
-
-<form action="https://formsubmit.co/el/titosa" method="POST">
-
-<input type="text" name="Full Name" placeholder="Full Name" required><br><br>
-
-<input type="email" name="Email" placeholder="Email Address" required><br><br>
-
-<input type="text" name="Phone Number" placeholder="Phone Number" required><br><br>
-
-<input type="text" name="Course Name" placeholder="Course (B.Sc/M.Sc)" required><br><br>
-
-<input type="text" name="Subject" placeholder="Subject (Chemistry)" required><br><br>
-
-<input type="text" name="Semester" placeholder="Semester" required><br><br>
-
-<input type="text" name="College Name" placeholder="College Name" required><br><br>
-
-<input type="text" name="Department" placeholder="Department" required><br><br>
-
-<textarea name="Message" placeholder="Why do you want to join?" rows="4"></textarea><br><br>
-
-<!-- Important settings -->
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-
-<button type="submit">Submit</button>
-
-</form>
