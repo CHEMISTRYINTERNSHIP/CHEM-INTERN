@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChemIntern Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f8fb;
-        }
-        header {
-            background-color: #0b5ed7;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background-color: #084298;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-        button {
-            background-color: #198754;
-            color: white;
-            padding: 8px 12px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #0b5ed7;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChemIntern Hub</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f8fb;
+}
+header {
+    background: #0b5ed7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+nav {
+    background: #084298;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+.container {
+    padding: 20px;
+}
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+button {
+    background: green;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    background: #0b5ed7;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>ChemIntern Hub</h1>
-    <p>Find Internships in Organic, Inorganic & Applied Chemistry</p>
+<h1>ChemIntern Hub</h1>
+<p>Chemistry Internship & Training Platform</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Internships</a>
-    <a href="#">Apply</a>
-    <a href="#">Resources</a>
-    <a href="#">Contact</a>
+<a href="#">Home</a>
+<a href="#">Internships</a>
+<a href="#program">Program</a>
+<a href="#apply">Apply</a>
 </nav>
 
 <div class="container">
 
-    <h2>🔍 Featured Internships</h2>
+<h2>🔍 Featured Internships</h2>
 
-    <div class="card">
-        <h3>Research Internship – Organic Chemistry</h3>
-        <p>Institute: IIT Delhi</p>
-        <p>Duration: 2 Months</p>
-        <button>Apply Now</button>
-    </div>
+<div class="card">
+<h3>Research Internship – Organic Chemistry</h3>
+<p>IIT Level Training</p>
+<button>Apply</button>
+</div>
 
-    <div class="card">
-        <h3>Industrial Internship – Pharma</h3>
-        <p>Company: Sun Pharma</p>
-        <p>Duration: 3 Months</p>
-        <button>Apply Now</button>
-    </div>
+---
 
-    <h2>📝 Apply for Internship</h2>
+<h2 id="program">🎓 2-Week Internship Program</h2>
 
-    <form>
-        <input type="text" placeholder="Full Name" required><br><br>
-        <input type="email" placeholder="Email" required><br><br>
-        <input type="text" placeholder="Qualification"><br><br>
-        <input type="file"><br><br>
-        <button type="submit">Submit</button>
-    </form>
+<div class="card">
+<h3>Chemistry Software Training (₹399)</h3>
+<p><b>Duration:</b> 2 Weeks</p>
+<p><b>Includes:</b> ChemDraw, Chem3D, Basic Research Skills</p>
+<p><b>Mode:</b> Online</p>
+<p><b>Certificate:</b> Yes</p>
+<button onclick="document.getElementById('apply').scrollIntoView();">
+Apply Now
+</button>
+</div>
+
+---
+
+<h2 id="apply">📝 Apply Now</h2>
+
+<form action="https://formsubmit.co/YOUR-EMAIL@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Full Name" required><br><br>
+<input type="email" name="email" placeholder="Email" required><br><br>
+<input type="text" name="qualification" placeholder="Qualification"><br><br>
+<button type="submit">Submit</button>
+</form>
 
 </div>
 
 <footer>
-    <p>© 2026 ChemIntern Hub | Contact: info@chemintern.com</p>
+<p>© 2026 ChemIntern Hub</p>
 </footer>
 
 </body>
